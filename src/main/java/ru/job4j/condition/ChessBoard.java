@@ -5,7 +5,7 @@ public class ChessBoard {
         int rsl = 0;
         if (Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
             rsl = Math.abs(x2 - x1);
-            rsl = 0 <= x1 && x2 <= 7 && 0 <= y1 && y2 <= 7 ? rsl : 0;
+            rsl = 0 > x1 || x1 > 7 || 0 > x2 || x2 > 7 || 0 > y1 || y1 > 7 || 0 > y2 || y2 > 7 ? 0 : rsl;
         }
         return rsl;
         }
