@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.util.concurrent.CancellationException;
-
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
@@ -23,6 +21,14 @@ public class MatrixCheck {
             }
         }
         return result;
+    }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl;
     }
 }
 
