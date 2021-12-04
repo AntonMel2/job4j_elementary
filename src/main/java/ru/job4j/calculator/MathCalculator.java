@@ -21,5 +21,4 @@ public class MathCalculator {
         System.out.println("Результат расчета равен: " + subAnddiv(10, 20));
         System.out.println("Результат расчета равен: " + gsum(10, 20));
     }
-
 }

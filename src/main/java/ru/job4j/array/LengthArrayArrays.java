@@ -7,7 +7,6 @@ public class LengthArrayArrays {
             System.out.println(
                     "Размер вложенного массива равен: " + numbers[i].length
             );
-
         }
     }
 }
